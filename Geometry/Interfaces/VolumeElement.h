@@ -5,7 +5,7 @@
 /* include files */
 #pragma once
 
-#include "../SimplePrimitives/Point3.h"
+#include "Geometry/SimplePrimitives/Point3.h"
 
 
 namespace Geometry {
@@ -17,8 +17,8 @@ namespace Geometry {
 class VolumeElement {
 
 public:
-        /* check if point is inside */
-        virtual bool contains(Point3d &point, bool inclusive) const = 0;
+    /* check if point is inside */
+    virtual bool contains(Point3d &point, bool inclusive) const = 0;
 };
 
 
